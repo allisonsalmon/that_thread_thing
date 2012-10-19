@@ -6,7 +6,8 @@ gem 'rails', '3.2.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-gem 'omniauth-oauth2'
+gem 'omniauth-oauth'
+gem 'haml-rails'
 
 
 # Gems used only for assets and not required
@@ -20,6 +21,13 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'pry'
+end
+
+
 
 gem 'jquery-rails'
 
