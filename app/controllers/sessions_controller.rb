@@ -5,9 +5,12 @@ class SessionsController < ApplicationController
     puts omniauth.to_hash.to_yaml
     puts "*"*20
 
-    session[:account_id] = raise 'weeeeee'
+    session[:account_id] = params[:oauth_token]
+    session[:username] = params[:username]
+    
+    set_ravelry_token(omniauth.extra.access_token)
 
-    redirect_to home_url # or a graph api call
+    redirect_to '/threads/graph' 
   end
 
   def destroy
