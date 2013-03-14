@@ -1,4 +1,4 @@
-$(function start() {  
+$(this).ready( function() {  
 var margin = {top: 10, right: 10, bottom: 40, left: 10}
 
     width = 960 - margin.left - margin.right,
@@ -145,6 +145,7 @@ d3.json("/threads/project_data.json", function(json) {
 
 
 });
+});
 
 function TransitionCompleted() {
   var stack = 0;
@@ -261,4 +262,3 @@ function TransitionAll() {
     .duration(1000);
 };
 
-});
