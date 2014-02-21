@@ -12,6 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
 //= require d3
-//= require progress_chart
+//= require rickshaw
+//= require Chart

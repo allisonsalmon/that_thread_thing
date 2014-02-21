@@ -9,6 +9,7 @@ gem 'pg'
 gem 'omniauth-oauth'
 gem 'haml-rails'
 gem 'd3-rails'
+gem 'chart-js-rails'
 
 
 # Gems used only for assets and not required

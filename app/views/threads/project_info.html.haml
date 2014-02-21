@@ -1,0 +1,6 @@
+%script
+  != "projects = #{@projects.to_json};"
+%script{src: '/assets/radar_project_type.js', type: 'text/javascript'}
+%canvas{id: 'status_breakdown', width: 500, height: 500}
+%canvas{id: 'radar_project_type', width: 500, height: 500}
+
